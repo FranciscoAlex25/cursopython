@@ -23,4 +23,3 @@ if opr == 'x':
     while cont <= 10:
         print(f'{valor} * {cont} = {valor * cont}')
         cont += 1
-
