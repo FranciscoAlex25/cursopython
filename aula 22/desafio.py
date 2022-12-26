@@ -15,7 +15,6 @@ frase = list(len(palavra) * '*')
 print(frase)
 
 while True:
-    
     # Verifica se tem letras para advinhar 
     if '*' not in frase:
         print()
