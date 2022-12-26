@@ -3,6 +3,7 @@ remove(value) - append() - pop(indice) - clear() - del() - insert() -
 '''
 
 nomes = ['alex', 'karol', 'julio', 'matheus']
+senha = (12345)
 
 a, *_ = nomes
 
