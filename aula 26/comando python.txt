@@ -1,0 +1,5 @@
+python -- version
+python --help
+python -m "executa uma lib como script"
+python -c "executa um comando python" 
+python -i "abri um arquivo para ser executado"
