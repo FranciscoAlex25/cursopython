@@ -22,4 +22,3 @@ valor = valores(**dados_gerais)
 
 for chave, valor in valor.items():
     print(chave, valor)
-
