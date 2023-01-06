@@ -6,5 +6,3 @@ def dividir(n1, n2):
     except:
         raise ZeroDivisionError('Divisão por zero')
 
-
-dividir(2, 0)
