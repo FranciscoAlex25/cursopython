@@ -9,24 +9,33 @@
 # Resultado
 # [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
 
-
-cidades = ['Salvador', 'Ubatuba', 'Belo Horizonte']
-estados = ['BA', 'SP', 'MG', 'RJ']
 lista1 = []
 
 
-def zipper(*args1):
-    lista2 = [i for i in args1]
+def zipper():
+    cidades = ['Salvador', 'Ubatuba', 'Belo Horizonte']
+    estados = ['BA', 'SP', 'MG', 'RJ']
 
-    def unir(*args2):
-        lista3 = [i for i in args2]
+    for i in range(len(cidades)):
+        lista1.append((cidades[i], estados[i]))
 
-        for i in range(len(lista2)):
-            lista1.append((lista2[i], lista3[i]))         
-        print(lista1)
+    return lista1
 
-    return unir
+print(zipper())
+
+# def zipper(*cidades):
+#     lista2 = [i for i in cidades]
+
+#     def unir(*estados):
+#         lista3 = [i for i in estados]
+
+#         for i in range(len(lista2)):
+#             lista1.append((lista2[i], lista3[i]))     
+
+#         return(lista1)
+    
+#     return unir
 
 
-l1 = zipper(*cidades)
-l1(*estados)
+# l1 = zipper(*['Salvador', 'Ubatuba', 'Belo Horizonte'])
+# print(l1(*['BA', 'SP', 'MG', 'RJ']))

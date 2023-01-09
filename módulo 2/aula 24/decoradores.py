@@ -14,5 +14,4 @@ def inverter(string):
 
 
 # string = return_string(inverter)
-
 print(inverter('alex'))
