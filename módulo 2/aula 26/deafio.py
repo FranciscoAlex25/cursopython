@@ -10,7 +10,7 @@ lista_b     = [1, 2, 3, 4]
 lista_soma  = [2, 4, 6, 8]
 """
 
-lista1 = [1, 2, 3, 4, 5, 6]
+lista1 = [1, 2, 3, 4, 5]
 lista2 = [1, 2, 3, 4]
 lista_c = []
 
@@ -18,9 +18,7 @@ lista_c = []
 def verificarMaior(func):
     def verificar(lista1, lista2):
         if len(lista1) >= len(lista2):
-            for i in range(len(lista2)):
-                lista_c.append(lista1[i] + lista2[i])
-            return lista_c
+            return func(lista2, lista1)
         return func(lista1, lista2)
     return verificar 
 
@@ -28,7 +26,7 @@ def verificarMaior(func):
 @ verificarMaior
 def somarLista(lista1, lista2):
     for i in range(len(lista1)):
-            lista_c.append(lista1[i] + lista2[i])
+        lista_c.append(lista1[i] + lista2[i])
     return lista_c
 
 
