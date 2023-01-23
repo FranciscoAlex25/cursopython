@@ -1,0 +1,2 @@
+SUCCESS: Moto G está ligado
+ERROR: Moto G "está ligado já
