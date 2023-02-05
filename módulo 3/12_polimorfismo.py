@@ -11,7 +11,7 @@ class Notificacao(ABC):
 
 class NotificacaoEmail(Notificacao):
     def enviar_mensagem(self):
-        print('EMAIL:', self.mensagem)
+        print('EMAIL: ', self.mensagem)
 
 
 notificacao = NotificacaoEmail('testando')
