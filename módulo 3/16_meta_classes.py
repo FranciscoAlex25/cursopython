@@ -9,6 +9,18 @@ class MetaClass(type):
         instancia.__repr__ = repr_
         return instancia
     
+    def __call__(cls, *args, **kwds):
+        cls_ = super().__call__(*args, **kwds)
+        print('CALL DA METACLASSE')
+        print(cls_.__dict__)
+
+        if 'nome' in cls_.__dict__:
+            print('Tem o atributo Nome')
+        else:
+            print('Não tem o atributo nome')
+
+        return cls_
+
 
 class Pessoa(object, metaclass=MetaClass):
     def __new__(cls, *args, **kwargs):
@@ -17,8 +29,10 @@ class Pessoa(object, metaclass=MetaClass):
     
     def __init__(self):
         print('INIT DA INSTÂNCIA')
+        self.nome = 'Alex'
 
+    def falar(self):
+        print('falando')
 
 
 a = Pessoa()
-print(a)
